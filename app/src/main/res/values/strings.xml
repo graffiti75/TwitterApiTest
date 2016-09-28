@@ -18,4 +18,5 @@
     <!-- Timeline Activity -->
 
     <string name="activity_timeline__title">Timeline</string>
+    <string name="activity_timeline__keyword_toolbar">Keyword</string>
 </resources>

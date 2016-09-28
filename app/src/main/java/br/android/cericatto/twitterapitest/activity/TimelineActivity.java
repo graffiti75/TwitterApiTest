@@ -40,8 +40,8 @@ public class TimelineActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_timeline);
 
-        initToolbar(true);
         getExtras();
+        initToolbar(true);
         callFragment();
     }
 
@@ -75,19 +75,20 @@ public class TimelineActivity extends AppCompatActivity {
     // Private Methods
     //--------------------------------------------------
 
+    private void getExtras() {
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            mKeyword = extras.getString(Globals.KEYWORD_EXTRA);
+        }
+    }
+
     private void initToolbar(boolean homeEnabled) {
         Toolbar toolbar = (Toolbar) findViewById(R.id.id_toolbar);
         if (toolbar != null) {
             setSupportActionBar(toolbar);
             getSupportActionBar().setDisplayHomeAsUpEnabled(homeEnabled);
-            toolbar.setTitle(R.string.activity_timeline__title);
-        }
-    }
-
-    private void getExtras() {
-        Bundle extras = getIntent().getExtras();
-        if (extras != null) {
-            mKeyword = extras.getString(Globals.KEYWORD_EXTRA);
+            String text = getString(R.string.activity_timeline__keyword_toolbar) + ": " + mKeyword;
+            getSupportActionBar().setTitle(text);
         }
     }
 
