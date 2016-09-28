@@ -12,7 +12,10 @@
     <string name="activity_main__type_keyword">Type Keyword</string>
     <string name="activity_main__keyword_hint">Enter with the keyword</string>
     <string name="activity_main__empty_keyword">The keyword can not be empty.</string>
-    <string name="activity_main__open_tweet">Open Tweet</string>
+
+    <string name="activity_main__show_history_text_view">Search History</string>
+    <string name="activity_main__show_history_button">Show Search History</string>
+    <string name="activity_main__history_empty">Search history empty. Please make a search.</string>
     <string name="activity_main__open_timeline">Open Timeline</string>
 
     <!-- Timeline Activity -->
