@@ -1,0 +1,21 @@
+<resources>
+    <!--=============== APPLICATION ===============-->
+
+    <string name="app_name">TwitterApiTest</string>
+
+    <!--=============== SCREENS ===============-->
+
+    <!-- Main Activity -->
+
+    <string name="activity_main__title">Twitter App</string>
+
+    <string name="activity_main__type_keyword">Digite a Palavra-Chave</string>
+    <string name="activity_main__keyword_hint">Entre com o termo a ser buscado</string>
+    <string name="activity_main__empty_keyword">A palavra-chave não pode ser vazia.</string>
+    <string name="activity_main__open_tweet">Abrir Tweet</string>
+    <string name="activity_main__open_timeline">Abrir Timeline</string>
+
+    <!-- Timeline Activity -->
+
+    <string name="activity_timeline__title">Timeline</string>
+</resources>
