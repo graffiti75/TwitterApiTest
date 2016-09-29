@@ -35,20 +35,22 @@
     <!-- Buttons -->
 
     <Button
+        android:id="@+id/id_activity_main__open_timeline_button"
         style="@style/ButtonStyle"
-        android:layout_gravity="bottom|center"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="10dp"
         android:onClick="embeddedTimeline"
         android:text="@string/activity_main__open_timeline" />
 
     <Button
+        android:id="@+id/id_activity_main__show_history_button"
         style="@style/ButtonStyle"
-        android:layout_gravity="bottom|center"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="10dp"
         android:onClick="showHistory"
         android:text="@string/activity_main__show_history_button" />
+
+    <Button
+        android:id="@+id/id_activity_main__show_trends_button"
+        style="@style/ButtonStyle"
+        android:onClick="showTrends"
+        android:text="@string/activity_main__show_trends" />
 
     <!-- Recycler View -->
 
@@ -70,5 +72,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/grey_200"
-        android:padding="10dp" />
+        android:padding="10dp"
+        android:visibility="gone" />
 </LinearLayout>

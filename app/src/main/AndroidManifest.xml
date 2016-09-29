@@ -5,6 +5,7 @@
     <!--=============== PERMISSIONS ===============-->
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <!--=============== APPLICATION ===============-->
 
@@ -28,6 +29,10 @@
 
         <activity
             android:name=".activity.TimelineActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.TrendsActivity"
             android:screenOrientation="portrait" />
 
         <!-- Twitter -->

@@ -9,6 +9,7 @@
 
     <string name="activity_main__title">Twitter App</string>
 
+    <string name="activity_main__no_connection">Sem conexão. Tente novamente mais tarde.</string>
     <string name="activity_main__type_keyword">Digite a Palavra-Chave</string>
     <string name="activity_main__keyword_hint">Entre com o termo a ser buscado</string>
     <string name="activity_main__empty_keyword">A palavra-chave não pode ser vazia.</string>
@@ -17,6 +18,7 @@
     <string name="activity_main__show_history_button">Mostrar Histórico</string>
     <string name="activity_main__history_empty">História de buscas vazio. Por favor realize uma busca.</string>
     <string name="activity_main__open_timeline">Abrir Timeline</string>
+    <string name="activity_main__show_trends">Mostrar Trends</string>
 
     <!-- Timeline Activity -->
 

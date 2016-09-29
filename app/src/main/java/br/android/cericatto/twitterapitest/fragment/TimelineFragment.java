@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import com.twitter.sdk.android.tweetui.TweetTimelineListAdapter;
 
 import br.android.cericatto.twitterapitest.R;
-import br.android.cericatto.twitterapitest.TwitterTimelineAsyncTask;
+import br.android.cericatto.twitterapitest.tasks.TwitterTimelineAsyncTask;
 import br.android.cericatto.twitterapitest.global.Globals;
 
 /**

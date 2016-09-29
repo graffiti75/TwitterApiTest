@@ -1,8 +1,13 @@
 package br.android.cericatto.twitterapitest.global;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
 import android.os.Bundle;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 /**
  * Utils.java.
@@ -11,6 +16,16 @@ import android.os.Bundle;
  * @since Sep 27, 2016
  */
 public class Utils {
+
+    //--------------------------------------------------
+    // Network Methods
+    //--------------------------------------------------
+
+    public static Boolean hasConnection(Activity activity) {
+        ConnectivityManager connectivityManager = (ConnectivityManager) activity.getSystemService(Context.CONNECTIVITY_SERVICE);
+        Boolean hasConnection = connectivityManager.getActiveNetworkInfo() != null;
+        return hasConnection;
+    }
 
     //--------------------------------------------------
     // String Methods
@@ -32,6 +47,12 @@ public class Utils {
     // Activity Methods
     //--------------------------------------------------
 
+    public static void startActivity(Activity activity, Class clazz) {
+        Intent intent = new Intent(activity, clazz);
+        activity.startActivity(intent);
+        Navigation.animate(activity, Navigation.Animation.GO);
+    }
+
     public static void startActivityExtras(Activity activity, Class clazz, String key, Object value) {
         Intent intent = new Intent(activity, clazz);
         Bundle extras = getExtra(new Bundle(), key, value);
@@ -52,5 +73,22 @@ public class Utils {
             extras.putBoolean(key, (Boolean) value);
         }
         return extras;
+    }
+
+    //--------------------------------------------------
+    // Json Methods
+    //--------------------------------------------------
+
+    public static String parseString(JSONObject jsonObject, String key) {
+        String value = "";
+        try {
+            value = jsonObject.getString(key);
+            if (value == null) {
+                value = "";
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return value;
     }
 }

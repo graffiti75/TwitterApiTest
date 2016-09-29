@@ -9,6 +9,7 @@
 
     <string name="activity_main__title">Twitter App</string>
 
+    <string name="activity_main__no_connection">No connection. Try again later.</string>
     <string name="activity_main__type_keyword">Type Keyword</string>
     <string name="activity_main__keyword_hint">Enter with the keyword</string>
     <string name="activity_main__empty_keyword">The keyword can not be empty.</string>
@@ -17,9 +18,13 @@
     <string name="activity_main__show_history_button">Show Search History</string>
     <string name="activity_main__history_empty">Search history empty. Please make a search.</string>
     <string name="activity_main__open_timeline">Open Timeline</string>
+    <string name="activity_main__show_trends">Show Trends</string>
 
     <!-- Timeline Activity -->
 
     <string name="activity_timeline__title">Timeline</string>
     <string name="activity_timeline__keyword_toolbar">Keyword</string>
+
+    <!-- Trends Activity -->
+    <string name="activity_trends__title">Trend Topics</string>
 </resources>

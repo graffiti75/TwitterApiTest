@@ -1,4 +1,4 @@
-package br.android.cericatto.twitterapitest;
+package br.android.cericatto.twitterapitest.tasks;
 
 import android.app.Activity;
 import android.os.AsyncTask;
